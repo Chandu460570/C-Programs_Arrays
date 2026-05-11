@@ -1,6 +1,6 @@
-# C Programming practices(Arrays)
+# Programming practices(Arrays)
 
-This repository contains my C programming practice codes related to arrays.
+This repository contains my programming practice codes related to arrays.
 
 ## Topics Covered
 -Arrays
