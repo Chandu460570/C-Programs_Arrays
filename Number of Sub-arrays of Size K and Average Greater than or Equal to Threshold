@@ -1,0 +1,19 @@
+class Solution(object):
+    def numOfSubarrays(self, arr, k, threshold):
+        """
+        :type arr: List[int]
+        :type k: int
+        :type threshold: int
+        :rtype: int
+        """
+        n=len(arr)
+        count=0
+        su=sum(arr[:k])
+        t=threshold*k
+        if su>=t:
+            count+=1
+        for i in range(k,n):
+            su += arr[i]-arr[i-k]
+            if su>=t:
+                count+=1
+        return count
